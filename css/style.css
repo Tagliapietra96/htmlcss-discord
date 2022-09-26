@@ -1,0 +1,118 @@
+/* --- Reset --- */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 16px;
+}
+/* -------------------------------------------------------------------------------------- */
+
+/* Dummy Classes */
+.fnt_b{
+	font-weight: bold;
+}
+
+.txt-a_c{
+	text-align: center;
+}
+
+.txt-c_white{
+	color: white;
+}
+
+.bgc_lightblue{
+	background-color: lightblue;
+    padding: 1rem 0;
+}
+
+.bgc_blue{
+	background-color: blue;
+    padding: 3rem 0;
+}
+
+.flex{
+	display: flex;
+}
+
+.container{
+    width: 920px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    border: 1px  solid red;
+}
+/* -------------------------------------------------------------------------------------- */
+
+header nav div:nth-child(2){
+    flex-grow: 1;
+}
+
+header ul.flex{
+    justify-content: center;
+    gap: 1rem;
+}
+
+header li{
+    list-style: none;
+}
+
+header div.container{
+    width: 700px;
+}
+
+section{
+    padding: 3rem 0;
+}
+
+section:nth-child(even){
+    background-color: grey;
+}
+
+section .col-img{
+    flex-basis: 65%;
+    background-color: rgb(36, 130, 231);
+    padding: 1rem;
+}
+
+section .col-p{
+    flex-basis: 35%;
+    background-color: pink;
+    padding: 1rem;
+}
+
+div.container.big,
+header div.container{
+    padding: 15rem 0;
+}
+
+footer{
+    background-color: black;
+    padding: 1rem 0;
+}
+
+footer div.container{
+    padding: 8rem 0;
+}
+
+footer div.container>*{
+    flex-grow: 1;
+    background-color: aquamarine;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+footer div.container>div:first-of-type{
+    flex-grow: 1.5;
+    background-color: brown;
+}
+
+footer nav.container{
+    background-color: aqua;
+    justify-content: space-between;
+}
+
+hr{
+    margin: 1rem;
+}
