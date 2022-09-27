@@ -55,14 +55,13 @@ button:hover{
     background-color: white;
     box-shadow: 0px 0px 10px grey;
 }
+
+.txt_c_w{
+    color: white;
+}
 /* -------------------------------------------------------------------------------------- */
 body{
     color: #23272a;    
-}
-
-header,
-footer{
-    color: white;
 }
 
 div.header-menu{
