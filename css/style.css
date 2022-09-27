@@ -11,14 +11,6 @@ html{
 /* -------------------------------------------------------------------------------------- */
 
 /* Dummy Classes */
-.fnt_b{
-	font-weight: bold;
-}
-
-.txt-a_c{
-	text-align: center;
-}
-
 .flex{
 	display: flex;
 }
@@ -28,13 +20,42 @@ html{
     margin: 0 auto;
     border: 1px  solid red;
 }
+
+button{
+    font-size: 1.2rem;
+    padding: .8rem 1rem;
+    border-radius: 25px;
+    border: none;
+}
+
+button.small{
+    padding: .5rem .7rem;
+    border-radius: 15px;
+    font-size: small;
+}
+
+button.white{
+    background-color: white;
+}
+
+button.blue{
+    background-color: #7289da;
+    color: white;
+}
+
+header button:hover{
+    color: white;
+    background-color: #255ee9;
+    border: white;
+    box-shadow: 0px 0px 10px white;
+}
 /* -------------------------------------------------------------------------------------- */
 
 header{
     color: white;
 }
 
-.header-menu{
+div.header-menu{
     background-color: #255ee9;
     padding-top: 1rem;
 }
@@ -92,30 +113,10 @@ header li a:hover{
     box-shadow: 0px 0px 10px white;
 }
 
-header nav div.button_container{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-header button:hover{
-    color: white;
-    background-color: #255ee9;
-    border: white;
-    box-shadow: 0px 0px 10px white;
-}
-
-header button{
-    padding: .5rem .7rem;
-    background-color: white;
-    border: none;
-    border-radius: 15px;
-}
 
 header div.header-description{
     background-image: url("../img/jumbo.png");
     background-size: cover;
-
 }
 
 header div.container{
@@ -135,14 +136,14 @@ header div.header-description p{
     margin-bottom: 2rem;
 }
 
-div.opening-buttons{
-    padding-bottom: 3rem;
+header nav div.button_container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-header div.header-description button{
-    font-size: 1.2rem;
-    padding: .8rem 1rem;
-    border-radius: 25px;
+div.opening-buttons{
+    padding-bottom: 3rem;
 }
 
 button.download::before{
@@ -151,13 +152,10 @@ button.download::before{
     font-weight: bold;
 }
 
-button.download{
-    margin-right: 1.5rem;
-}
-
 button.open-browser{
     color: white;
-    background-color: black;
+    background-color: #23272a;
+    margin-left: 1.5rem;
 }
 
 section{
@@ -176,6 +174,12 @@ section .col-img img{
     width: 100%;
 }
 
+section .col-p{
+    flex-basis: 40%;
+    flex-grow: 1;
+    padding: 2rem;
+}
+
 section .col-p h2{
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -184,12 +188,6 @@ section .col-p h2{
 section .col-p p{
     font-size: 1rem;
     line-height: 1.5rem;
-}
-
-section .col-p{
-    flex-basis: 40%;
-    flex-grow: 1;
-    padding: 2rem;
 }
 
 div.container.big{
