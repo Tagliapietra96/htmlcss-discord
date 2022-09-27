@@ -50,6 +50,9 @@ header button:hover{
     box-shadow: 0px 0px 10px white;
 }
 /* -------------------------------------------------------------------------------------- */
+body{
+    color: #23272a;
+}
 
 header{
     color: white;
@@ -146,12 +149,6 @@ div.opening-buttons{
     padding-bottom: 3rem;
 }
 
-button.download::before{
-    content:"\2193";
-    margin-right: 5px;
-    font-weight: bold;
-}
-
 button.open-browser{
     color: white;
     background-color: #23272a;
@@ -191,7 +188,12 @@ section .col-p p{
 }
 
 div.container.big{
-    padding: 15rem 0;
+    text-align: center;
+}
+
+section div.main-download{
+    width: 600px;
+    
 }
 
 footer{
