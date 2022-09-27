@@ -19,20 +19,6 @@ html{
 	text-align: center;
 }
 
-.txt-c_white{
-	color: white;
-}
-
-.bgc_lightblue{
-	background-color: lightblue;
-    padding: 1rem 0;
-}
-
-.bgc_blue{
-	background-color: blue;
-    padding: 3rem 0;
-}
-
 .flex{
 	display: flex;
 }
@@ -40,26 +26,138 @@ html{
 .container{
     width: 920px;
     margin: 0 auto;
-    padding: 3rem 0;
     border: 1px  solid red;
 }
 /* -------------------------------------------------------------------------------------- */
 
-header nav div:nth-child(2){
-    flex-grow: 1;
+header{
+    color: white;
 }
+
+.header-menu{
+    background-color: #255ee9;
+    padding-top: 1rem;
+}
+
+header nav{
+    padding: 0.5rem 0;
+    height: 4rem;
+    align-items: center;
+}
+
+header nav>div{
+    flex-basis: 25%;
+    flex-shrink: 0;
+}
+
+header nav>div.link-list{
+    flex-grow: 1;
+    height: 100%;
+}
+
+header nav img{
+    width: 50%;
+}
+
 
 header ul.flex{
     justify-content: center;
-    gap: 1rem;
+    height: 100%;
 }
 
 header li{
     list-style: none;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+
+}
+
+header li a{
+    color: white;
+    font-size: smaller;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+header li a:hover{
+    color: #255ee9;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px white;
+}
+
+header nav div.button_container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header button:hover{
+    color: white;
+    background-color: #255ee9;
+    border: white;
+    box-shadow: 0px 0px 10px white;
+}
+
+header button{
+    padding: .5rem .7rem;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+header div.header-description{
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+
 }
 
 header div.container{
     width: 700px;
+    text-align: center;
+    padding: 10rem 0;
+}
+
+header div.header-description h1{
+    margin: 2rem 0;
+    font-size: 3rem;
+}
+
+header div.header-description p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+div.opening-buttons{
+    padding-bottom: 3rem;
+}
+
+header div.header-description button{
+    font-size: 1.2rem;
+    padding: .8rem 1rem;
+    border-radius: 25px;
+}
+
+button.download::before{
+    content:"\2193";
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+button.download{
+    margin-right: 1.5rem;
+}
+
+button.open-browser{
+    color: white;
+    background-color: black;
 }
 
 section{
@@ -67,23 +165,34 @@ section{
 }
 
 section:nth-child(even){
-    background-color: grey;
+    background-color: #f6f6f6;
 }
 
 section .col-img{
-    flex-basis: 65%;
-    background-color: rgb(36, 130, 231);
-    padding: 1rem;
+    flex-basis: 60%;
+}
+
+section .col-img img{
+    width: 100%;
+}
+
+section .col-p h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+section .col-p p{
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 section .col-p{
-    flex-basis: 35%;
-    background-color: pink;
-    padding: 1rem;
+    flex-basis: 40%;
+    flex-grow: 1;
+    padding: 2rem;
 }
 
-div.container.big,
-header div.container{
+div.container.big{
     padding: 15rem 0;
 }
 
