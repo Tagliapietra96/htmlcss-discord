@@ -21,6 +21,38 @@ html{
     margin: 0 auto;
 }
 
+h1{
+    margin: 2rem 0;
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+h3{
+    margin-bottom: 3rem;
+}
+
+h4{
+    font-size: 1.7rem;
+}
+
+
+h5{
+    font-size: 1rem;
+}
+
+span{
+    font-size: 0.7rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
 nav{
     display:flex;
     padding: 1rem 0;
@@ -66,6 +98,11 @@ button:hover{
 .txt_c_w{
     color: white;
 }
+
+.txt_c_b{
+    color: #7289da;
+}
+
 /* -------------------------------------------------------------------------------------- */
 body{
     color: #23272a;    
@@ -91,9 +128,7 @@ header li{
 }
 
 header li a{
-    color: white;
     font-size: smaller;
-    text-decoration: none;
     padding: 0.8rem 1rem;
     display: inline-block;
 }
@@ -106,29 +141,6 @@ header li a:hover{
     box-shadow: 0px 0px 10px white;
 }
 
-
-div.header-description{
-    background-image: url("../img/jumbo.png");
-    background-size: cover;
-}
-
-header div.container{
-    width: 700px;
-    text-align: center;
-    padding: 10rem 0;
-}
-
-header div.header-description h1{
-    margin: 2rem 0;
-    font-size: 3rem;
-}
-
-header div.header-description p{
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    margin-bottom: 2rem;
-}
-
 header nav div.button_container{
     display: flex;
     align-items: center;
@@ -136,6 +148,24 @@ header nav div.button_container{
     width: 115px;
     flex-shrink: 0;
 }
+
+div.header-description{
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+}
+
+div.header-description>.container{
+    width: 700px;
+    text-align: center;
+    padding: 10rem 0;
+}
+
+header p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+}
+
 
 div.opening-buttons{
     padding-bottom: 3rem;
@@ -182,11 +212,6 @@ section .col-p{
     padding: 2rem;
 }
 
-section .col-p h2{
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
 section .col-p p{
     font-size: 1rem;
     line-height: 1.5rem;
@@ -196,7 +221,7 @@ div.container.big{
     text-align: center;
 }
 
-section div.main-download{
+div.main-download{
     width: 600px;
     padding: 1rem;
     background-image: url("../img/stars.svg");
@@ -204,12 +229,6 @@ section div.main-download{
     background-position: top;
     background-size: 60%;
 }
-
-section div.main-download h3{
-    margin-bottom: 3rem;
-}
-
-
 
 footer{
     background-color: #23272a;
@@ -220,34 +239,16 @@ footer div.container{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid  #7289da;
-}
-
-footer div.col{
     padding-bottom: 1.5rem;
 }
-
 
 footer div.col.big>*{
     margin-bottom: 1rem;
 }
 
-footer h3{
-    color: #7289da;
-    font-size: 1.7rem;
-}
-
 footer div.col li{
     list-style: none;
     margin-bottom: 1rem;
-}
-
-footer div.col li h3{
-    font-size: 1rem;
-}
-
-footer div.col li a{
-    color: white;
-    text-decoration: none;
 }
 
 footer div.social i{
@@ -258,13 +259,4 @@ footer div.social i{
 footer div.select-lenguage img{
     width: 1.5rem;
     vertical-align: middle;
-}
-
-footer div.select-lenguage span{
-    font-size: 0.7rem;
-}
-
-footer nav.container{
-
-
 }
