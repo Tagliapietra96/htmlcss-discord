@@ -152,11 +152,20 @@ button.open-browser{
 }
 
 section{
-    padding: 6rem 0;
+    padding: 3rem 0;
+    margin: 2rem 0;
 }
 
 section:nth-child(even){
     background-color: #f6f6f6;
+}
+
+section .wavespattern{
+    margin-top: -150px;
+}
+
+section .wavespattern.turned{
+    transform: rotate(180deg);
 }
 
 section .col-img{
