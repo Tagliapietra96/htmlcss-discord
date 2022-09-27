@@ -21,6 +21,13 @@ html{
     margin: 0 auto;
 }
 
+nav{
+    display:flex;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
 button{
     font-size: 1.2rem;
     padding: .8rem 1rem;
@@ -68,45 +75,27 @@ div.header-menu{
     background-color: #255ee9;
 }
 
-nav{
-    padding: 1rem 0;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header nav>div{
-    flex-basis: 25%;
+div.discord-logo{
+    width: 115px;
     flex-shrink: 0;
 }
 
-header nav>div.link-list{
-    flex-grow: 1;
-}
-
-img[src="img/logo.svg"]{
-    width: 115px;
-}
-
-
-header ul.flex{
+header ul{
+    display: flex;
     justify-content: center;
 }
 
 header li{
     list-style: none;
     flex-grow: 1;
-    display: flex;
-    justify-content: center;
-
 }
 
 header li a{
     color: white;
     font-size: smaller;
     text-decoration: none;
-    display: flex;
-    align-items: center;
     padding: 0.8rem 1rem;
+    display: inline-block;
 }
 
 header li a:hover{
@@ -118,7 +107,7 @@ header li a:hover{
 }
 
 
-header div.header-description{
+div.header-description{
     background-image: url("../img/jumbo.png");
     background-size: cover;
 }
@@ -144,6 +133,8 @@ header nav div.button_container{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    width: 115px;
+    flex-shrink: 0;
 }
 
 div.opening-buttons{
@@ -225,7 +216,8 @@ footer{
     padding: 5rem 0 1rem;
 }
 
-footer div.container.flex{
+footer div.container{
+    display: flex;
     justify-content: space-between;
     border-bottom: 1px solid  #7289da;
 }
